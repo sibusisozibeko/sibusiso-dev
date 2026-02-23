@@ -1,13 +1,17 @@
-package Base;
-
-import Utilities.BrowserFactory;
-import org.openqa.selenium.WebDriver;
 
 public class BaseTest {
-    BrowserFactory browserFactory = new BrowserFactory();
 
-     public final String url = "https://www.ndosiautomation.co.za/";
-     public final String browserChoice = "chrome";
+    protected WebDriver driver;
 
-     public final WebDriver driver = browserFactory.startBrowser(browserChoice, url);
+    @BeforeMethod
+    public void setUp() {
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.get("https://ndosisimplifiedautomation.vercel.app/");
+    }
+
+    @AfterMethod
+    public void tearDown() {
+        driver.quit();
+    }
 }
