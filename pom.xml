@@ -18,7 +18,7 @@
     <dependency>
         <groupId>org.seleniumhq.selenium</groupId>
         <artifactId>selenium-java</artifactId>
-        <version>4.40.0</version>
+        <version>4.41.0</version>
         <scope>compile</scope>
     </dependency>
     <!-- Source: https://mvnrepository.com/artifact/org.testng/testng -->
@@ -27,6 +27,12 @@
         <artifactId>testng</artifactId>
         <version>7.12.0</version>
         <scope>test</scope>
+    </dependency>
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-simple</artifactId>
+        <version>2.0.17</version>
+        <scope>test</scope> <!-- Use 'test' if you only want logging during tests, or 'runtime' to always enable it -->
     </dependency>
 </dependencies>
 </project>
