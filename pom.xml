@@ -34,5 +34,14 @@
         <version>2.0.17</version>
         <scope>test</scope> <!-- Use 'test' if you only want logging during tests, or 'runtime' to always enable it -->
     </dependency>
+    <!-- Source: https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+    <dependency>
+        <groupId>io.github.bonigarcia</groupId>
+        <artifactId>webdrivermanager</artifactId>
+        <version>6.3.3</version>
+        <scope>compile</scope>
+    </dependency>
+
 </dependencies>
+
 </project>
